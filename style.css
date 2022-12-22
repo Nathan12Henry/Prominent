@@ -2,127 +2,45 @@
     margin: 0px;
     padding: 0px;
 }
+
 .mode-container {
     width: 24px;
     height: 24px;
     padding: 0px 0;
     margin-left: 10px;
     color: var(--heading-color);
-  }
-  
-  .mode-container:hover {
-    color: var(--primary-color);
-  }
-  
-  .gg-sun {
-    position: relative;
-    transform: scale(var(--ggs, 1));
-    height: 24px;
-    background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
-    border-radius: 100px;
-    box-shadow: inset 0 0 0 2px;
-    border: 6px solid transparent;
-  }
-  
-  .gg-moon {
-    overflow: hidden;
-    position: relative;
-    transform: rotate(-135deg) scale(var(--ggs, 1));
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-bottom: 2px solid transparent;
-  }
-  
-  .gg-moon,
-  .gg-moon:after {
-    display: block;
-    box-sizing: border-box;
-    border-radius: 50%;
-    /* color: #fff; */
-  }
-  
-  .nav-fixed .gg-moon,
-  .nav-fixed .gg-moon:after {
-    color: var(--heading-color);
-  }
-  
-  .gg-moon:after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 18px;
-    border: 2px solid transparent;
-    box-shadow: 0 0 0 2px;
-    top: 8px;
-    left: 2px;
-  }
-  
-  .gg-sun,
-  .gg-sun:after,
-  .gg-sun:before {
-    box-sizing: border-box;
-    display: block;
-    width: 24px;
-  }
-  
-  .gg-sun:after,
-  .gg-sun:before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    border-right: 4px solid;
-    border-left: 4px solid;
-    left: -6px;
-    top: 5px;
-  }
-  
-  .gg-sun:before {
-    transform: rotate(-45deg);
-  }
-  
-  .gg-sun:after {
-    transform: rotate(45deg);
-  }
-  
-  .mode-container i.gg-sun {
-    display: none;
-  }
-  
-  .mode-container i.gg-moon {
-    display: block;
-    cursor: pointer;
-  }
-  
-  input:checked+.mode-container i.gg-sun {
-    display: block;
-    cursor: pointer;
-  }
-  
-  input:checked+.mode-container i.gg-moon {
-    display: none;
-  }
-
-.name{
-    font-size: 30px;
-    font-family:Verdana,;
 }
+
+.mode-container:hover {
+    color: var(--primary-color);
+}
+
+
+.name {
+    font-size: 30px;
+    font-family: Verdana, ;
+}
+
 .home {
     background-position: relative;
     background-repeat: no-repeat;
     height: 500px;
-    width: 100%;
-    opacity: 0.5;
+    width: 80%;
+    opacity: 0.;
     background-attachment: fixed;
+    border-radius: 30px;
 }
-ul{
+
+ul a {
     color: #f13a8f;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
+
 ul :hover {
     text-decoration: underline;
-    color:rgb(217, 14, 129) !important;
+    color: rgb(217, 14, 129) !important;
 }
 
 .card-title {
@@ -130,36 +48,40 @@ ul :hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 5px 5px 20px;
     text-transform: capitalize;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.newslather form{
-width: 380px;
-max-width: 100%;
-position: relative;
+.newslather form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
 }
-.newslather form input:first-child{
+
+.newslather form input:first-child {
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
     border: 2px solid rgb(217, 14, 129);
     outline: none;
     border-radius: 30px;
+    caret-color: #36f372 !important;
 }
-.newslather form input:last-child{
-position:absolute;
-display: inline-block;
-outline: none;
-border: none;
-padding: 10px 30px;
-border-radius: 30px;
-background-color:rgb(217, 14, 129) ;
-color: white;
-box-shadow: 0px 0px px #000, 0px 0px 15px #858585;
-top: 6px;
-right: 6px;
+
+.newslather form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;                                                                                                                                                                                                                                                                                          
+    border-radius: 30px;
+    background-color: rgb(217, 14, 129);
+    color: white;
+    box-shadow: 0px 0px px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
 
 }
+
 .henry {
     color: rgb(50, 62, 30);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -195,12 +117,11 @@ right: 6px;
 .image {
     height: 500px;
     width: 100%;
+    border-radius: 30px;
 }
 
 .image:hover {
-    animation-delay: initial;
-    opacity: 0.8;
-    background-color: aquamarine;
+    background-color: #000 !important;
     border-radius: 50%;
     box-shadow: 20px 10px 10px;
 }
@@ -281,6 +202,8 @@ right: 6px;
 
 }
 
+
+
 .loader2 .loader2-item {
     position: absolute;
     width: 100%;
@@ -323,34 +246,46 @@ right: 6px;
         transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     }
 }
-.button{
+
+.loader2:hover {
+    background-color: black;
+    border-color: 5px gold !important;
+}
+
+.button {
     background-color: #f9004d;
-    color:white ;
+    color: white;
     text-decoration: none;
-    border:2px solid transparent ;
-    font-weight:bold ;
-    padding:10px 20px;
-    border-radius:30px ;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
     transition: 1s;
+ 
 }
-.button:hover{
+
+.button:hover {
     background-color: transparent;
-    border: 2px solid  #f9004d;
+    border: 2px solid #f9004d;
     cursor: pointer;
+    transition: scale(1.2);
 }
-.link{
+
+.link {
     padding: 5px;
     border-radius: 50%;
-    background-color:  #f9004d;
+    background-color: #f9004d;
     color: rgb(221, 206, 186);
     font-size: 30px;
 }
-.card-body :hover{
+
+.card-body :hover {
     background-color: #000;
     color: white;
     top: 6px;
 }
-.contact{
+
+.contact {
     color: #000;
     font-weight: bold;
 }
