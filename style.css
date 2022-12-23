@@ -272,11 +272,10 @@ ul :hover {
 }
 
 .link {
-    padding: 5px;
+    padding: 2px;
     border-radius: 50%;
-    background-color: #f9004d;
-    color: rgb(221, 206, 186);
-    font-size: 30px;
+    background-color: rgb(230, 126, 185);
+    font-size: 20px;
 }
 
 .card-body :hover {
