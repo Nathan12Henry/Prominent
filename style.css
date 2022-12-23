@@ -22,13 +22,9 @@
 }
 
 .home {
-    background-position: relative;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 80%;
-    opacity: 0.;
-    background-attachment: fixed;
-    border-radius: 30px;
+    aspect-ratio: 100px;
+    border-radius: 50px;
+    width: 100%;
 }
 
 ul a {
@@ -39,7 +35,7 @@ ul a {
 }
 
 ul :hover {
-    text-decoration: underline;
+    text-decoration: underline yellow;
     color: rgb(217, 14, 129) !important;
 }
 
@@ -72,7 +68,7 @@ ul :hover {
     display: inline-block;
     outline: none;
     border: none;
-    padding: 10px 30px;                                                                                                                                                                                                                                                                                          
+    padding: 10px 30px;
     border-radius: 30px;
     background-color: rgb(217, 14, 129);
     color: white;
@@ -83,11 +79,15 @@ ul :hover {
 }
 
 .henry {
-    color: rgb(50, 62, 30);
+    color: rgb(245, 226, 16);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 80px;
     text-shadow: 5px 5px 20px;
     text-transform: capitalize;
+}
+
+.lagos {
+    color: #000;
 }
 
 .based {
@@ -261,7 +261,7 @@ ul :hover {
     padding: 10px 20px;
     border-radius: 30px;
     transition: 1s;
- 
+
 }
 
 .button:hover {
